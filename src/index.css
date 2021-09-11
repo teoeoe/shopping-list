@@ -1,0 +1,143 @@
+:root{
+  --purple-light: #d9cce8;
+  --purple-dark: rgb(180, 158, 222);
+  --yellow-light:rgba(166, 205, 229,0.6);
+
+}
+
+*{
+  font-size: 36px;
+}
+
+body{
+  margin:0;
+  padding:0;
+  font-family: sans-serif;
+  color: white;
+}
+
+.App{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.app-background{
+  background-color: var(--yellow-light);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container{
+  background-color: var(--purple-dark);
+  width: 50vw;
+  height: min-content;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 20px 30px 0px rgba(90,127,175,2);
+}
+
+.add-item-box{
+  background: var(--purple-light);
+  color: var(--purple-dark);
+  margin-top: 1em;
+  margin-bottom: 1em;
+
+  display: flex;
+  align-items:center;
+  gap:20px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.add-item-box svg {
+  margin: 5px;
+}
+
+.add-item-input{
+  box-sizing: border-box;
+  color: white;
+  background: transparent;
+  width:100%;
+  height: 30px;
+  border:none;
+  border-bottom: 2px var(--purple-dark) solid;
+  font-size: 0.8em;
+}
+
+input::placeholder {
+  color: white;
+  font-size: 0.8em;
+}
+
+input:focus{
+  outline: 0;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.item-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-container{
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  padding: 20px 0 20px 0;
+  border-bottom: 1px var(--purple-light) solid;
+  overflow: hidden;
+}
+
+button{
+  background:transparent;
+  border:none;
+  color: var(--purple-dark);
+}
+
+button:hover{
+ color:var(--purple-light);
+}
+
+.quantity{
+background-color: white;
+border-radius: 20px;
+color: var(--purple-dark);
+}
+
+.total{
+display:flex;
+justify-content: flex-end;
+}
+
+.completed{
+  text-decoration:line-through;
+}
+.price{
+  width:4.5vw;
+  background: var(--purple-light);
+  color: white;
+  padding: 5px 10px;
+  border:none;
+  border-radius: 10px;
+}
+.price::placeholder{
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.icon-style{
+  border: 3px var(--purple-light) solid;
+  padding: 5px;
+  border-radius:5px;
+  transition: 0.2s;
+}
+
+.icon-style:hover{
+  color:white;
+  border: 3px white solid;
+}
